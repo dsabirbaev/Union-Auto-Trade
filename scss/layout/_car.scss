@@ -1,0 +1,14 @@
+
+
+#car{
+    margin-top: 60px;
+    
+    .car-img{
+        border-radius: 30px;
+        min-height: 700px;
+        background-image: url(../assets/images/car.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}

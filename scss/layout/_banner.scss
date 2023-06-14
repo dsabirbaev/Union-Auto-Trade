@@ -1,0 +1,78 @@
+
+
+#banner{
+    margin-top: 90px;
+
+    .wrapper{
+      
+        display: flex;
+        justify-content: space-between;
+
+        .banner-left{
+            position: relative;
+            img{
+                width: 640px;
+            }
+            h1{
+                @include font-style(24px, $ff-EurostileExtendedRegular, $color-white);
+                letter-spacing: 12%;
+                position: absolute;
+                top: 20px;
+                left: 30px;
+            }
+            button{
+                @include font-style(14px, $ff-EurostileExtendedRegular, $color-white);
+                letter-spacing: 12%;
+                background-color: transparent;
+                padding: 23px 44px;
+                border: 1px solid $color-white;
+                
+                border-radius: 10px;
+                position: absolute;
+                right: 30px;
+                bottom: 30px;
+                transition: all 0.3s ease;
+                &:hover{
+                    background-color: $color-white;
+                    color: $color-black;
+                }
+            }
+        }
+        .banner-right{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            
+            &__item{
+                position: relative;
+                img{
+                    width: 640px;
+                }
+            }
+            h1{
+                @include font-style(24px, $ff-EurostileExtendedRegular, $color-white);
+                letter-spacing: 12%;
+                position: absolute;
+                top: 20px;
+                left: 30px;
+            }
+            button{
+                @include font-style(14px, $ff-EurostileExtendedRegular, $color-white);
+                letter-spacing: 12%;
+                background-color: transparent;
+                padding: 23px 44px;
+                border: 1px solid $color-white;
+                
+                border-radius: 10px;
+                position: absolute;
+                right: 30px;
+                bottom: 30px;
+                transition: all 0.3s ease;
+                &:hover{
+                    background-color: $color-white;
+                    color: $color-black;
+                }
+            }
+        }
+    }
+}

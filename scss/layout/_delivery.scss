@@ -1,0 +1,89 @@
+
+#delivery{
+    margin-top: 165px;
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .delivery__title{
+            @include font-style(30px, $ff-EurostileExtendedRegular, $color-black, uppercase);
+            letter-spacing: 5%;
+            line-height: 43.5px;
+            max-width: 660px;
+            text-align: center;
+        }
+        .delivery-cards{
+            display: flex;
+            flex-direction: column;
+            row-gap: 18px;
+            width: 100%;
+        }
+        .delivery-card{
+            display: flex;
+            column-gap: 13px;
+            &-second{
+                min-width: 560px;
+            }
+            &-third{
+                min-width: 428px;
+            }
+            &-four{
+               min-width: 545px;
+            }   
+            &-five{
+               flex-grow: 2;
+            }
+            .second-text__width{
+                max-width: 365px;
+            }
+            .four-text__width{
+                margin-top: 25px;
+                max-width: 442px;
+            }
+            .five-text__width{
+                
+                max-width: 327px;
+            }
+            &__item{
+                width: 325px;
+                height: 250px;
+                padding-top: 20px;
+                
+                padding-left: 20px;
+                border: 1px solid silver;
+                border-radius: 8px;
+                &--title{
+                    @include font-style(32px, $ff-EurostileExtendedRegular, $color-black, uppercase);
+                    margin-bottom: 40px;
+                }
+                h4{
+                    @include font-style(24px, $ff-EurostileExtendedBold, $color-black, uppercase);
+                    margin-bottom: 8px;
+                }
+                &-text{
+                    display: flex;
+                    column-gap: 85px;
+                    margin-top: 15px;
+                    button{
+                        @include font-style(14px, $ff-EurostileExtendedRegular, $color-black, uppercase);
+                        width: 285px;
+                        height: 45px;
+                        background-color: transparent;
+                        border: 1px solid silver;
+                        border-radius: 8px;
+                        transition: all 0.3s ease;
+                        &:hover{
+                            background-color: #4071CB;
+                            color: $color-white;
+                        }
+                    }
+                }
+                &--text{
+                    @include font-style(18px, $ff-InterRegular, $color-black);
+                    line-height: 23px;
+                }
+            }
+        }
+    }
+}
